@@ -633,7 +633,7 @@ Allows future integration of processed video frames (e.g., with bounding boxes o
 	initImgProcessSystem(&myImgProcess, (u32)XPAR_AXI_DMA_0_BASEADDR, &Intc);
 	startImageProcessing(&myImgProcess);
 
-	int status;
+	int status; 
 	int Index;
 	int choice;
 	u32 Addr;
