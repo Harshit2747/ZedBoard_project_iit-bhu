@@ -768,3 +768,8 @@ Allows future integration of processed video frames (e.g., with bounding boxes o
 	return XST_SUCCESS;
     }
 
+# RESULT 
+after simulation 
+![WhatsApp Image 2025-07-02 at 13 41 17_6c0b8a98](https://github.com/user-attachments/assets/b6bcc186-8fd5-4f0b-a9b7-84086439eb07)
+
+
