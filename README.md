@@ -29,9 +29,7 @@ Understanding ZedBoard Architecture:
 
 .Verified HDMI and VGA video paths by displaying RGB color patterns and test images stored in memory.
 
-.Image Processing and Photo Display:
-
-.Implemented image processing steps such as grayscale conversion, thresholding, and edge detection either on the PS or using custom IPs in the PL.
+. Photo Display:
 
 .Displayed static test images (e.g., drone photos) through the video interface to verify the complete image pipeline.
 
