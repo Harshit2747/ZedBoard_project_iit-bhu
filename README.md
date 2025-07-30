@@ -1,6 +1,6 @@
 # Drone ditection using zedboard(Work in Progress).
 
-This project aims to build a real-time drone detection system using the ZedBoard (Zynq-7000 SoC) platform. It focuses on capturing live video from a camera, processing the video using OpenCV on the ARM Cortex-A9 (PS), and detecting moving drone-like objects based on motion.
+This project aims to build a real-time drone detection system using the ZedBoard (Zynq-7000 SoC) platform. It focuses on capturing live video from a camera, processing the video on the ARM Cortex-A9 (PS), and detecting moving drone-like objects based on motion.
 
 # Current progress.
 
