@@ -268,7 +268,34 @@ Allows future integration of processed video frames (e.g., with bounding boxes o
  
 # RESULT 
 
-after simulation 
+We have successfully implemented an image display system on the ZedBoard using the designed Vivado hardware and PS-side software.
+The current setup allows any custom image to be processed in MATLAB, uploaded to the ZedBoard via the Processing System (PS), and displayed in real time through the VGA output.
+
+✅ Achievements
+Hardware Design:
+
+AXI VDMA configured to transfer frame data from DDR memory to VGA output.
+
+Video Timing Controller and AXI4-Stream to Video Out generate VGA-compatible signals for the monitor.
+
+Software Implementation (PS):
+
+C program written in Xilinx SDK to read the processed image data from DDR and send it to VDMA.
+
+Integrated MATLAB workflow to prepare the image pixel data in the required format.
+
+Successfully displayed the uploaded image on the VGA monitor
+
+# MATLAB Code – Image to Text for ZedBoard
+	 i= imread('myimage.png'); 
+	fid=fopen('Myfile.txt','w');
+	for r =1:512
+	for c =1:512
+	fprintf(fid,"%d,",i(c,r));
+	end
+	end
+	fclose(fid);
+
 ![WhatsApp Image 2025-07-02 at 13 41 17_6c0b8a98](https://github.com/user-attachments/assets/b6bcc186-8fd5-4f0b-a9b7-84086439eb07)
 
 
