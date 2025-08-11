@@ -73,6 +73,30 @@ Converts and outputs the video in VGA format.
 
 Allows future integration of processed video frames (e.g., with bounding boxes or overlays from detection software).
 
+# Processing System (PS) Implementation – Key Points
+Platform: Implemented on ZedBoard using Xilinx VDMA for video data transfer from DDR to VGA output.
+
+VDMA Configuration:
+Allocated and assigned frame buffer addresses in DDR.
+
+Interrupt Handling:
+
+Set up XScuGic interrupt controller to handle VDMA completion and error interrupts.
+Registered separate callback functions for normal completion and error events.
+
+Image Rendering (drawImage):
+
+Implemented a function to position the image at the center of the VGA screen.
+Cache flush is performed after writing to ensure updated data is sent to VGA.
+
+Integration with MATLAB Preprocessing:
+
+Image data is preprocessed in MATLAB into a .txt file, then converted into a C header file (imageData.h) for inclusion in the PS code.
+
+Verification:
+
+Successfully displayed the 512×512 grayscale image centered on a 1920×1080 VGA display.
+Verified that the PS → DDR → VDMA → VGA pipeline is functional.
 
 # PS Part (c code)
  
