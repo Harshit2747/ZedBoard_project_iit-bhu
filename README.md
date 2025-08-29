@@ -47,7 +47,8 @@ As part of the drone detection system, the video interfacing and frame buffer se
 We have completed the hardware design for capturing and displaying video frames using the AXI VDMA, video timing controller, and Zynq PS. This design allows us to stream image frames from DDR memory to the VGA output, forming the foundation for later software-based drone detection using OpenCV.
 
 # Vivado Block Design
-![WhatsApp Image 2025-07-02 at 14 42 46_dae373aa](https://github.com/user-attachments/assets/8aaa0a3f-c6da-4768-9e55-f08f948566e9)
+<img width="1900" height="940" alt="image" src="https://github.com/user-attachments/assets/f9224300-d997-44d7-a3db-445a2a099fb3" />
+
 
 
 # Vivado Block Design Summary
